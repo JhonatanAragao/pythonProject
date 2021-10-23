@@ -71,7 +71,7 @@ while codigo == True:
 
     #CASO 3: USUÁRIO DESEJA LISTAR  OS POKÉMONS ADICIONADOS
     elif escolha_do_menu == 3:
-
+#vdc
 
 
 
