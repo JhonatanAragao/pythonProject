@@ -22,6 +22,7 @@
 #ignoradas).
 #menu = ["1. Adicionar pokémon","2. Remover pokémon","3. Listas","4. Mostrar pokémons por letra inicial","5. Sair"]
 codigo = True
+lista_de_pokemons = []
 while codigo == True:
     menu = ("1. Adicionar pokémon\n2. Remover pokémon\n3. Listar pokémons\n4. Mostrar pokémons por letra inicial\n5. Sair\n")#criação do menu de interação!
     print(menu)
@@ -31,7 +32,6 @@ while codigo == True:
 
     #CASO 1: USUÁRIO ESCOLHEU ADICIONAR POKÉMONS
     elif escolha_do_menu == 1:
-        lista_de_pokemons = []
         print("** Adicionar um novo pokémon **")
         novo_pokemon = input("Qual pokémon você deseja adicionar?\n")
         lista_de_pokemons.append(novo_pokemon)
@@ -53,7 +53,7 @@ while codigo == True:
     #CASO 2: USUÁRIO ESCOLHEU REMOVER  UM POKÉMON
     elif escolha_do_menu == 2:
         print("** Remover um pokémon **\n")
-        remover_pokemon = input("Qual o nome do pokémon que você deseja remover?")
+        remover_pokemon = input("Qual o nome do pokémon que você deseja remover?\n")
         lista_de_pokemons.remove(remover_pokemon)
         print("Pokémon %s removido com sucesso!"%(remover_pokemon))
         limite_de_remover = 0
@@ -71,8 +71,27 @@ while codigo == True:
 
     #CASO 3: USUÁRIO DESEJA LISTAR  OS POKÉMONS ADICIONADOS
     elif escolha_do_menu == 3:
-#vdc
+        print("Sua lista de pokémons:")
+        print("\n".join(lista_de_pokemons)+"\n")
 
+    #CASO 4: USUÁRIO DESEJA MOSTRAR POKÉMONS POR LETRA INICIAL
+    elif escolha_do_menu == 4:
+
+
+
+
+
+
+#CODIGO FEITO EM AULA USANDO COMO BASE
+produtos = {"abacate":5.00,"pêra":2.00,"maça":1.50,"uva":4.00,"abacaxi":8.00}
+print("Tabela de preços\n")
+letra = input("digite uma letra\n")
+if len(letra) > 1:
+    print("Digite apenas uma letra!")
+else:
+    for chave,valor in produtos.items():
+        if chave[0] == letra:
+            print(chave,produtos[chave])
 
 
 
