@@ -10,14 +10,25 @@
 #while x <= numero:
 #    print(x)
 #    x = x + 1
+#usando FOR
+#for i in range(numero):
+#    if i > 0:
+#        print(i)
+#print(numero)
 
 
 #alterando o programa anterior para utilizar somente os números pares.
 numero = 15 #int(input('Digite o último número a imprimir:\n'))
-x = 0
-while x <= numero:
-    if x % 2 ==0:
-        print(x)
-    x = x + 1
+#x = 0
+#while x <= numero:
+#    if x % 2 ==0:
+#        print(x)
+#    x += 1
+for i in range(numero):
+    if i % 2 ==0 and i > 0:
+        print(i)
+
+
+
 
 
